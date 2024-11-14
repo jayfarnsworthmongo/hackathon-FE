@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class SiteMetrics extends Component {
+class SiteMetrics3 extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -52,10 +52,9 @@ class SiteMetrics extends Component {
   componentWillUnmount() {
     clearInterval(this.intervalId); // Clear interval when component unmounts
   }
-
   fetchMetrics = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/metrics?siteid=washpark', {
+      const response = await fetch('http://localhost:3000/api/metrics?siteid=chcreek', {
         method: 'GET',
         mode: 'cors', // Enable CORS
         headers: {
@@ -120,7 +119,7 @@ class SiteMetrics extends Component {
     return (
       <div style={styles.body}>
         <div style={styles.container}>
-          <h1 style={styles.heading}>Site Metrics - CapHill</h1>
+          <h1 style={styles.heading}>Site Metrics - Ch Creek</h1>
 
           <div style={styles.section}>
             <div style={styles.label}>Timestamp:</div>
@@ -162,4 +161,4 @@ class SiteMetrics extends Component {
   }
 }
 
-export default SiteMetrics;
+export default SiteMetrics3;

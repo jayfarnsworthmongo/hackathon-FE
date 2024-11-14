@@ -8,7 +8,7 @@ const Dashboard = () => {
   return <div className="App">
     <h1 className="title">MongoDB Charts</h1>
     <div className="charts">
-      <Chart height={'600px'} width={'800px'} chartId={'b2cb3ae1-e9ea-4e93-a243-26d518a99b0d'}/>
+      
     </div>
   </div>
 };
